@@ -1,0 +1,55 @@
+/* orderDetail.css */
+.order-detail {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-detail .ant-table {
+  margin-top: 20px;
+}
+
+/* order list  */
+/* orderList.css */
+.order-list {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-list h2 {
+  margin-bottom: 20px;
+}
+
+
+/* MODAL EDIT */
+:disabled{
+  cursor: no-drop;
+}
+.form-edit-order{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.form-edit-order .form-edit-order-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-edit-order .form-edit-order-item label{
+  font-weight: 500;
+}
+
+.form-edit-order .form-edit-order-item input{
+  outline: none;
+  padding: 5px;
+}
+
+.form-edit-order .form-edit-order-item select{
+  padding: 5px;
+  outline: none;
+}
