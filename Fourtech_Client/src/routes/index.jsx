@@ -14,7 +14,7 @@ import OrderDetail from "../pages/Admin/OderAdmin/orderDetail";
 import EditProduct from "../pages/Admin/ProductAdmin/editProduct";
 import AllProduct from "../pages/User/allProduct/Allproduct";
 import Pay from "../pages/User/pay/pay";
-import Brand from "../pages/Admin/BrandAdmin/Brand";
+import Brand from "../pages/Admin/BrandAdmin";
 import Createbrand from "../pages/Admin/BrandAdmin/CreateBrand";
 import UserAdmin from "../pages/Admin/UserAdmin";
 import Contact from "../pages/User/Contact/Contact";
