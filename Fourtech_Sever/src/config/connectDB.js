@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-require('dotenv').config
+require('dotenv').config()
 
 const database_host = process.env.DB_HOST;
 const database_port = process.env.DB_PORT;
