@@ -19,7 +19,7 @@ import Createbrand from "../pages/Admin/BrandAdmin/CreateBrand";
 import UserAdmin from "../pages/Admin/UserAdmin";
 import Contact from "../pages/User/Contact/Contact";
 // import {BrandAdmin} from "../pages/Admin/brandAdmin/index.jsx"
-import BrandAdmin from "../pages/Admin/BrandAdmin"
+import BrandAdmin from "../pages/Admin/BrandAdmin/Brand"
 import InFor from "../pages/User/InFor/InFor";
 import ContactAdmin from "../pages/Admin/ContactAdmin";
 import ForgotPassword from "../pages/User/Signinsignup/Forgotpassword";
