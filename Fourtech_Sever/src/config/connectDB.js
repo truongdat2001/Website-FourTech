@@ -1,34 +1,16 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config
 
-let sequelize;
+const database_host = process.env.DB_HOST;
+const database_name = process.env.DB_NAME;
+const database_user = process.env.DB_USER;
+const database_password = process.env.DB_PASSWORD;
 
-if (process.env.NODE_ENV === 'production') {
-    // Khi chạy trên Render hoặc môi trường production
-    sequelize = new Sequelize(process.env.DATABASE_URL, {
-        dialect: 'postgres',
-        protocol: 'postgres',
-        dialectOptions: {
-            ssl: {
-                require: true,
-                rejectUnauthorized: false
-            }
-        },
-        logging: false
-    });
-} else {
-    // Khi chạy ở local
-    sequelize = new Sequelize(
-        process.env.DB_NAME,
-        process.env.DB_USER,
-        process.env.DB_PASSWORD,
-        {
-            host: process.env.DB_HOST,
-            dialect: 'mysql',
-            logging: false
-        }
-    );
-}
+const sequelize = new Sequelize(database_name, database_user, database_password, {
+    host: database_host,
+    dialect: 'mysql',
+    logging: false
+});
 
 const connectDatabase = async () => {
     try {
